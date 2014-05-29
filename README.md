@@ -6,7 +6,7 @@ TODO: Write a gem description
 
 Add this line to your application's Gemfile:
 
-    gem 'omniauth-google-oauth2'
+    gem 'omniauth-vimeo-oauth2'
 
 And then execute:
 
@@ -14,7 +14,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install omniauth-google-oauth2
+    $ gem install omniauth-vimeo-oauth2
 
 ## Usage
 

@@ -1,6 +1,6 @@
 # OmniauthVimeoOauth2
 
-TODO: Write a gem description
+An Omniauth strategy for Vimeo
 
 ## Installation
 
@@ -18,7 +18,21 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+Rails.application.config.middleware.use OmniAuth::Builder do
+  provider :vimeo2, VIMEO_CREDENTIALS['client_id'], VIMEO_CREDENTIALS['client_secret'],
+           scope: 'public private'
+end
+```
+
+### Available scopes
+- *public*	View public videos
+- *private*	View private videos
+- *create*	Create new videos, groups, albums, etc.
+- *edit*	Edit videos, groups, albums, etc.
+- *delete*	Delete videos, groups, albums, etc.
+- *interact*	Interact with a video on behalf of a user, such as liking a video or adding it to your watch later queue
+- *upload*	Upload a video
 
 ## Contributing
 

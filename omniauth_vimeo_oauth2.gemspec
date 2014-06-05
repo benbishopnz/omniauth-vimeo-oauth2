@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = OmniauthVimeoOauth2::VERSION
   spec.authors       = ["Adam Haris | Acts as Consultancy Ltd."]
   spec.email         = ["iamadamharis@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{Omniauth strategy for Vimeo}
+  spec.summary       = %q{Omniauth strategy for Vimeo}
   spec.homepage      = "http://acts-as-consultancy.com"
   spec.license       = "MIT"
 

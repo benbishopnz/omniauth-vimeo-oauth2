@@ -2,14 +2,14 @@ require 'omniauth-oauth2'
 
 module OmniAuth
   module Strategies
-    class Vimeo2 < OmniAuth::Strategies::OAuth2
-      option :name, 'vimeo2'
+    class VimeoOauth2 < OmniAuth::Strategies::OAuth2
+      option :name, 'vimeo_oauth2'
 
       option :client_options, {
         :site => "https://api.vimeo.com",
-        :request_token_url => "/oauth/request_token",
-        :authorize_url => "/oauth/authorize",
-        :token_url => "/oauth/access_token",
+        :request_token_url => "https://api.vimeo.com/oauth/request_token",
+        :authorize_url => "https://api.vimeo.com/oauth/authorize",
+        :token_url => "https://api.vimeo.com/oauth/access_token",
       }
 
       uid { raw_info['uri'].gsub('/users/', '') }
